@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sosial Media</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #3498db 30%, #f39c12); /* Gradien dari biru ke oranye */
+        }
+        /* Style untuk card profil */
+        .profile-card {
+            background-color: #fff; /* Warna latar belakang card */
+            border-radius: 10px; /* Radius sudut card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan card */
+            padding: 20px; /* Ruang dalam card */
+            max-width: 510px; /* Lebar maksimum card */
+            height: 295px; /* Tinggi card yang lebih pendek */
+            margin: 0 auto; /* Posisi card di tengah */
+            display: flex; /* Menggunakan flexbox */
+            flex-direction: column; /* Tata letak elemen secara vertikal */
+            align-items: center; /* Posisikan elemen secara tengah secara vertikal */
+            text-align: center; /* Pusatkan teks */
+        }
+
+        /* Style untuk gambar profil */
+        .profile-card img {
+            max-width: 150px; /* Mengubah ukuran foto profil menjadi lebih kecil */
+            border-radius: 50%; /* Agar gambar profil menjadi lingkaran */
+            margin-bottom: 10px; /* Jarak antara gambar dan teks nama */
+        }
+
+        /* Style untuk teks nama */
+        .profile-card h2 {
+            font-size: 24px; /* Ukuran teks nama */
+            margin: 0; /* Hilangkan margin atas dan bawah */
+        }
+
+        /* Style untuk daftar tautan sosial media */
+        .social-links {
+            list-style: none; /* Menghilangkan tanda bulet pada daftar */
+            padding: 0; /* Menghilangkan padding default */
+            display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+            justify-content: center; /* Pusatkan elemen-elemen secara horizontal */
+            margin-top: 20px; /* Jarak antara daftar tautan dengan elemen di atasnya */
+        }
+
+        .social-links li {
+            margin: 0 8px; /* Jarak antara setiap tautan sosial media */
+        }
+
+        /* Style untuk ikon sosial media */
+        .social-links i {
+            font-size: 20px; /* Ukuran ikon sosial media */
+            color: #3498db; /* Warna ikon sosial media */
+        }
+
+        /* Style untuk teks tautan sosial media */
+        .social-links a {
+            font-size: 18px; /* Ukuran teks tautan sosial media */
+            color: #333; /* Warna teks tautan sosial media */
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            transition: color 0.3s; /* Transisi perubahan warna teks saat dihover */
+        }
+
+        /* Style untuk tautan tautan sosial media saat dihover */
+        .social-links a:hover {
+            color: #3498db; /* Warna teks saat dihover */
+        }
+
+        /* Style untuk tautan WhatsApp */
+        .whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Pusatkan elemen-elemen secara horizontal */
+            margin-top: 10px; /* Jarak dari daftar tautan */
+        }
+
+        .whatsapp p {
+            margin: 0; /* Hilangkan margin pada teks "Informasi Lebih Lanjut" */
+            margin-right: 10px; /* Jarak antara teks dan ikon WhatsApp */
+        }
+
+        .whatsapp a {
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+        }
+
+        .whatsapp img {
+            max-width: 24px; /* Ukuran ikon WhatsApp */
+            vertical-align: middle; /* Pusatkan ikon secara vertikal */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kartu Sosial Media</h1>
+    </header>
+    <main>
+        <section class="profile-card">
+            <img src="img/foto.jpg" alt="Foto Profil Anda">
+            <h2>Pandy</h2>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.facebook.com/Fandy Setiawan">
+                        <i data-feather="facebook"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/Pandysetiawan10">
+                        <i data-feather="twitter"></i> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/pandy.s_314">
+                        <i data-feather="instagram"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/Pandy Setiawan">
+                        <i data-feather="send"></i> Telegram
+                    </a>
+                </li>
+            </ul>
+            <div class="whatsapp">
+                <p>Informasi Lebih Lanjut</p>
+                <a href="https://wa.me/6282372421673" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/24/phone.svg" alt="WhatsApp">
+                </a>
+            </div>
+        </section>
+        <!-- Tambahkan lebih banyak profil atau card sosial media sesuai dengan kebutuhan Anda -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace(); // Mengaktifkan Feather Icons
+    </script>
+</body>
+</html>
